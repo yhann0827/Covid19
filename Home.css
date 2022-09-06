@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+/* =========================================================== */
+/* NAVIGATION BAR */
+/* =========================================================== */
+@keyframes navigation {
+  from  {
+    background-color: transparent;
+      transform:translateY(-100%);
+
+  }
+
+  to {
+    background-color: black;
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.navigation{
+  opacity: 0;
+  width: 100%;
+  background-color:black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation-name: navigation;
+  animation-duration: 3s;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+  position: fixed;
+  z-index:1000;
+}
+.navigation .link{
+  margin: 5px 30px 5px 30px;
+  display: flex;
+}
+.navigation .link a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px;
+  font-family: monospace;
+}
+.navigation .link a:hover{
+  text-decoration: underline;
+}
+.active{
+  text-decoration: underline !important;
+}
+#hwlogo{
+ width: 8%;
+ height: 10%;
+ padding-left: 60px;
+ margin: 10px;
+ animation-delay: 15s;
+}
+/* =========================================================== */
+/* BIG TITLE */
+/* =========================================================== */
+#covidimage{
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height:70%;
+}
+@keyframes about{
+  from {
+      background-color: transparent;
+    /* transform:translateY(30px); */
+  }
+  to {
+    opacity:1;
+    /* transform:translateY(0); */
+  }
+}
+@keyframes opaque{
+  from  {
+        background-color: black;;
+
+  }
+
+  to {
+    background-color: rgba(5, 5, 5, 0.8) ;
+  }
+}
+.animation{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.animation_div{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.covid{
+    width: auto;
+    /* position: absolute; */
+    color: white;
+    /* margin: -30% 45%; */
+    animation-name: about;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 3s;
+    animation-duration: 3s;
+}
+#coronavirus{
+  /* margin: 50 50vw; */
+  padding: 0 10px;
+  font-family: monospace;
+  font-size: 80px;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 16px;
+}
+#COVID{
+  /* margin: 50 50vw; */
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 16px;
+}
+#learn{
+  margin-left: auto;
+  display:flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-size: 20px;
+  font-family: serif;
+  color: white;
+}
+/* =========================================================== */
+/* INTRODUCTION */
+/* =========================================================== */
+.introduction{
+  height: 1200px;
+  margin: 0 25vw 10vw;
+}
+
+#intro{
+  margin-top: 20px;
+  margin: 50 50vw;
+  padding-top: 150px;
+  font-family: 'Changa One', cursive;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.intropara{
+  line-height: 35px !important;
+  font-family: sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.para1{
+  display: flex;
+  justify-content: space-between;
+}
+.para2{
+  display: flex;
+  justify-content: space-between;
+}
+.wuhan_div{
+  padding-bottom:20px;
+}
+#wuhan{
+  width: 300px;
+}
+#marketimg{
+  font-style: italic;
+  font-size: 15px;
+}
+.namephoto{
+  margin-bottom: 20px;
+}
+#name{
+  width: 200px;
+}
+.italicword{
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+}
+#paragraph2{
+  margin-left: 10px;
+}
+.para4{
+  display: flex;
+  justify-content: space-between;
+}
+#transmission{
+  width: 300px;
+}
+.img4{
+  margin-top: 50px;
+}
+.about{
+  margin-top: 3%;
+  margin-left: 10%;
+}
+#ul{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.list{
+  padding-left: 40px;
+  font-weight: normal;
+  font-size: 20px;
+}
+hr{
+  border: 3px solid black;
+  background-color: black;
+}
